@@ -84,7 +84,7 @@ namespace Paint
         {
             if (!isMouse) return;
             arrayPoints.SetPoint(e.X, e.Y);
-            if (arrayPoints.GetCountPoints() >= 2)
+            if (arrayPoints.GetCountPoints() == 2)
             {
                 graphics.DrawLines(pen, arrayPoints.GetPoints());
                 pictureBox1.Image = map;
